@@ -1,4 +1,4 @@
-# ZixzInk_Tattoo_WebSite
+# Tattoo_Shop_WebSite
 A project with focus on design with colors, fullpage scroll, image gallery and more.
 
 
