@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <!-- Thanks to creator for smooth fullpage scroll on https://codepen.io/fabeat/pen/EzxEGe -->
+  <title>ZixzInk Tattoo</title>
+</head>
+
+<body>
+
+  <div class="wrap">
+    <div id="wrap">
+      <!-- Home -->
+      <section>
+        <div class="sectionOne">
+          <h1 class="sectionOneHeader">ZixzInk Tattoo</h1>
+        </div>
+
+      </section>
+
+      <!-- Artwork -->
+      <section>
+        <div class="flexboxedLeft">
+          <h2 class="pageHeader">Artwork</h2>
+        </div>
+
+        <!-- START Image Gallery -->
+
+        <div class="row">
+          <div class="column">
+            <img src="/img/artwork/pexels-fotografierende-1461816.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="/img/artwork/pexels-kevin-bidwell-2183132.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="/img/artwork/pexels-letícia-lua-3140020.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="/img/artwork/pexels-marcelo-fernandes-2168261.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+          </div>
+        </div>
+        
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+        
+            <div class="mySlides">
+              <div class="numbertext">1 / 4</div>
+              <img src="/img/artwork/pexels-fotografierende-1461816.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+              <div class="numbertext">2 / 4</div>
+              <img src="/img/artwork/pexels-kevin-bidwell-2183132.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+              <div class="numbertext">3 / 4</div>
+              <img src="/img/artwork/pexels-letícia-lua-3140020.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+              <div class="numbertext">4 / 4</div>
+              <img src="/img/artwork/pexels-marcelo-fernandes-2168261.jpg" style="width:100%">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+        
+        
+            <div class="column">
+              <img class="demo cursor" src="/img/artwork/pexels-fotografierende-1461816.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="/img/artwork/pexels-kevin-bidwell-2183132.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="/img/artwork/pexels-letícia-lua-3140020.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="/img/artwork/pexels-marcelo-fernandes-2168261.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+            </div>
+          </div>
+        </div>
+
+        <!-- END Image Gallery -->
+
+      </section>
+
+      <!-- Booking -->
+      <section>
+        <div class="flexboxedLeft">
+          <h2 class="pageHeader">Book Date and Time</h2>
+          <p class="pageParagraph">You can book a date and time via below bookingsystem, or just send an email if you
+            have any questions.</p>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section>
+        <div class="flexboxedRight">
+          <h2 class="pageHeader">Contact Information</h2>
+          <h5 class="pageParagraph">Phone</h5>
+          <p class="pageParagraph">+46 (0) 123 45 56</p>
+          <h5 class="pageParagraph">Shop Adress</h5>
+          <p class="pageParagraph">Intown, 123 45 Sweden</p>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section>
+        <div class="flexboxedRight">
+          <h2 class="pageHeader">About <br> ZixzInk Tattoo</h2>
+          <p class="pageParagraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+            Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+            galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but
+            also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+            publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+        </div>
+
+
+        <div class="menu">
+          <div class="label">Follow Me</div>
+          <div class="spacer"></div>
+          <div class="item"><span>Facebook</span></div>
+          <div class="item"><span>Instagram</span></div>
+      </div>
+
+      
+      </section>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/gh/fabeat/responsive-fullpage-scroll@v1.0.3/dist/fullpage-scroll.js"></script>
+  <script src="/script.js"></script>
+
+</body>
+
+</html>
